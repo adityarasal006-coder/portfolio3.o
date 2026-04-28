@@ -1,0 +1,31 @@
+{
+    "folders": [
+        {
+            "path": "./"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.port": 3000,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit",
+            "source.fixAll.stylelint": "explicit"
+        },
+        "emmet.includeLanguages": {
+            "html": "html"
+        },
+        "files.associations": {
+            "*.css": "css",
+            "*.html": "html"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ritwickdey.liveserver",
+            "bradlc.vscode-tailwindcss",
+            "esbenp.prettier-vscode",
+            "antfu.vite",
+            "ms-vscode.vscode-typescript-next"
+        ]
+    }
+}

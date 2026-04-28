@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "ritwickdey.liveserver",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "antfu.vite",
+    "styled-components.vscode-styled-components",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    "dbaeumer.vscode-eslint"
+  ]
+}

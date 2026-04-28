@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🚀 Start Live Server",
+      "type": "shell",
+      "command": "live-server",
+      "args": ["public", "--port=3000", "--host=localhost", "--wait=1000"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*)$",
+          "file": 1
+        }
+      }
+    },
+    {
+      "label": "⚡ Deploy to Vercel",
+      "type": "shell",
+      "command": "npx",
+      "args": ["vercel", "--prod"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "📦 Build Production",
+      "type": "shell",
+      "command": "vite",
+      "args": ["build"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "🔍 Lighthouse Audit",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "lighthouse",
+        "public/",
+        "--output=html",
+        "--output-path=report.html"
+      ],
+      "group": "test"
+    }
+  ]
+}

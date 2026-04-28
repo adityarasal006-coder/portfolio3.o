@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🚀 Launch Live Server",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/public",
+      "preLaunchTask": "🚀 Start Live Server"
+    },
+    {
+      "name": "🐛 Debug WebGL Shaders",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/public",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "name": "📱 Mobile Preview",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "userDataDir": "${workspaceFolder}/.vscode/chrome-dev-profile",
+      "runtimeArgs": [
+        "--window-size=375,812",
+        "--window-position=0,0",
+        "--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)..."
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "🌐 Full Stack Debug",
+      "configurations": ["🚀 Launch Live Server", "🐛 Debug WebGL Shaders"]
+    }
+  ]
+}

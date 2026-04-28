@@ -1,0 +1,38 @@
+{
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.NoBrowser": false,
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.port": 3000,
+    "liveServer.settings.root": "/public",
+    
+    // Prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    
+    // Tailwind IntelliSense
+    "tailwindCSS.experimental.configFile": "./tailwind.config.js",
+    
+    // Emmet
+    "emmet.triggerExpansionOnTab": true,
+    
+    // Files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontSize": 14,
+    
+    // CSS Custom Data
+    "css.customData": [".vscode/css_custom_data.json"],
+    
+    // Cyber-Shinobi Theme
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0a0a0a",
+        "titleBar.activeBackground": "#8B0000",
+        "statusBar.background": "#00bfff",
+        "statusBar.foreground": "#f8f8f8"
+    }
+}

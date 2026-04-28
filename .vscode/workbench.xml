@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>window.titleBarStyle</key>
+    <string>custom</string>
+    <key>workbench.colorCustomizations</key>
+    <dict>
+        <key>activityBarBadge.background</key>
+        <string>#8B0000</string>
+        <key>statusBar.background</key>
+        <string>#0a0a0a</string>
+        <key>statusBar.foreground</key>
+        <string>#00bfff</string>
+    </dict>
+</dict>
+</plist>
