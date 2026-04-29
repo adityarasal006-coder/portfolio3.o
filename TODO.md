@@ -1,45 +1,15 @@
-# Cyber-Shinobi Master Portfolio - Build Plan
+# Fix GitHub Pages Deployment
 
-## Progress Tracker
+## Problem
 
-### Core Architecture
+GitHub Pages serves `index.html` from repo root. Current root `index.html` is a React entry point referencing `/src/main.jsx` — browsers cannot run JSX directly. The actual working vanilla site is in `public/`.
 
-- [x] Plan approved
-- [ ] Create TODO.md
-- [ ] Build `public/index.html` - Complete semantic structure with all sections
-- [ ] Build `public/style.css` - Master-level 2000+ line design system
-- [ ] Build `public/script.js` - Advanced animation & interaction engine
-- [ ] Configure `vite.config.js` - Production build optimization
-- [ ] Update `package.json` - Dependencies & deployment scripts
-- [ ] Create `README.md` - Deployment guide
+## Plan
 
-### Sections to Build
-
-- [ ] Loader Screen with animated progress
-- [ ] Custom Cursor System
-- [ ] Navigation with blur/scroll effects
-- [ ] Hero Section with Three.js WebGL shader background
-- [ ] About / Code Section with workflow cards
-- [ ] Tech Stack Carousel
-- [ ] Interactive Demo: Autonomous Task Executor
-- [ ] Interactive Demo: Real-Time Decision Matrix
-- [ ] Projects Showcase Grid
-- [ ] Hobbies & Art Section
-- [ ] Contact Section with functional form
-- [ ] Footer
-
-### Animation Systems
-
-- [ ] GSAP ScrollTrigger reveals
-- [ ] Character split text animations
-- [ ] Parallax scrolling effects
-- [ ] Stats counter animations
-- [ ] Glitch hover effects on buttons
-- [ ] 3D card rotations
-- [ ] Particle system (optional)
-
-### Deployment
-
-- [ ] Local testing
-- [ ] Production build
-- [ ] Deployment ready
+- [x] 1. Analyze file structure and identify root cause
+- [ ] 2. Replace root `index.html` with working `public/index.html`
+- [ ] 3. Move `public/script.js` to root
+- [ ] 4. Move `public/style.css` to root
+- [ ] 5. Remove stale `dist/` artifacts from git tracking
+- [ ] 6. Commit all changes
+- [ ] 7. Force-push to `portfolio2` remote
